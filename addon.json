@@ -1,0 +1,11 @@
+{
+    "display_name": "Simple Code Highlighter",
+    "module_name": "simple_code_highlighter",
+    "repo_name": "simple_code_highlighter",
+    "author": "KTKR",
+    "contact": "rkxyld@gmail.com",
+    "description": "A simple code highlighter for Anki",
+    "tags": "anki-addon",
+    "conflicts": [],
+    "targets": ["anki21"]
+}
