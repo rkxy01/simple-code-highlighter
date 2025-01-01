@@ -42,11 +42,7 @@ def format_block(editor, view):
                 .replace("\n", "&#10;")
         )
         
-        js_code = f"""
-            document.execCommand('insertHTML', false, 
-            '<pre><code class="{language}">{escaped_code}</code></pre><br>');
-        """
-        view.eval(js_code)
+        view.eval(f"wrap('<pre><code class=\"language-{language}\">', '{escaped_code}</code></pre>');")
 
 
 def format_inline(editor, view):
